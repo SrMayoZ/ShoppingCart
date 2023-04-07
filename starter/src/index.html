@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
+    <script src="assets/script.js" defer></script>
+    <script src="assets/front.js" defer></script>
+</head>
+<body>
+    <div class="shopping-cart">
+        <h1>Hector's Fruit Stand</h1>
+        <div class="currency-selector"></div>
+        <div class="cart-container">
+            <div class="products-container">
+                <h2>Products</h2>
+                <div class="products"></div>
+                <h2>Your Shopping Cart</h2>
+                <div class="empty-btn"></div>
+                <div class="cart"></div>
+            </div>
+            <div class="checkout-container">
+                <h2>Checkout</h2>
+                <div class="checkout">
+                    <div class="cart-total"></div>
+                    <form>
+                        <label>Enter Cash Received:</label>
+                        <input class="received" type="text">
+                        <button class="pay">Submit</button> 
+                    </form>
+                    <h3>Receipt</h3>
+                    <div class="pay-summary"></div>
+                    <div class="payment-form">
+                        <h2>Payment Information</h2>
+                        <form id="payment-form">
+                          <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" name="card-number" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="card-expiry">Expiration Date</label>
+                            <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" pattern="\d\d/\d\d" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="card-cvv">CVV</label>
+                            <input type="text" id="card-cvv" name="card-cvv" pattern="\d{3}" required>
+                          </div>
+                          <button type="submit" id="submit-payment">Submit Payment</button>
+                        </form>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "shopping-cart-project",
+  "version": "1.0.0",
+  "description": "shopping cart project with tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "live-server --port=3000 src"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "jest": "^27.5.1",
+    "live-server": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "jsdom": "^21.1.1"
+  }
+}
